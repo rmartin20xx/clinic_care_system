@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Patient Information Form</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style2.css">
+</head>
+
+<body>
+	<header>
+		<h1>Patient Information Form</h1>
+	</header>
+	<nav>
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="patient-info.html">Patient Information</a></li>
+			<li><a href="about.html">About</a></li>
+			<li><a href="contact.html">Contact</a></li>
+		</ul>
+	</nav>
+	<main>
+		<form>
+			<fieldset>
+				<legend>Patient Information</legend>
+
+
+				<label for="patient-number">Patient Unique Number:</label>
+				<input type="text" id="patient-number" name="patient-number" required>
+
+				<label for="lname">Last Name:</label>
+				<input type="text" id="lname" name="lname" required>
+
+				<label for="fname">First Name:</label>
+				<input type="text" id="fname" name="fname" required>
+
+				<label for="mname">Middle Name:</label>
+				<input type="text" id="fname" name="fname" required>
+
+
+
+				<label for="dob">Date of Birth:</label>
+				<input type="date" id="dob" name="dob" required>
+
+				<label for="gender">Gender:</label>
+				<select id="gender" name="gender" required>
+					<option value="">Select Gender</option>
+					<option value="male">Male</option>
+					<option value="female">Female</option>
+					<option value="other">Other</option>
+				</select>
+
+				<label for="address">Address:</label>
+				<textarea id="address" name="address" rows="4" cols="50" required></textarea>
+
+				<label for="phone">Phone:</label>
+				<input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+
+				<label for="email">Email:</label>
+				<input type="email" id="email" name="email" required>
+			</fieldset>
+			<hr>
+			<fieldset>
+				<legend>Medical Information</legend>
+				<label for="height">Height (in cm):</label>
+				<input type="number" id="height" name="height" min="1" max="300" required>
+
+				<label for="weight">Weight (in kg):</label>
+				<input type="number" id="weight" name="weight" min="1" max="500" required>
+
+				<label for="blood-type">Blood Type:</label>
+				<select id="blood-type" name="blood-type" required>
+					<option value="">Select Blood Type</option>
+					<option value="A+">A+</option>
+					<option value="A-">A-</option>
+					<option value="B+">B+</option>
+					<option value="B-">B-</option>
+					<option value="AB+">AB+</option>
+					<option value="AB-">AB-</option>
+					<option value="O+">O+</option>
+					<option value="O-">O-</option>
+				</select>
+<hr>
+				<label for="allergies">Allergies:</label>
+				<textarea id="allergies" name="allergies" rows="4" cols="50"></textarea>
+
+				<label for="medications">Current Medications:</label>
+				<textarea id="medications" name="medications" rows="15"></textarea>
+<hr>
+				<label for="medical-history">Medical History:</label>
+				<textarea id="medical-history" name="medical-history" rows="24" cols="50"></textarea>
+			</fieldset>
+
+			<button type="submit">Submit</button>
+			<button type="reset">Reset</button>
+		</form>
+	</main>
+	<footer>
+		<p>&copy; 2023 Our Website. All rights reserved.</p>
+	</footer>
+</body>
+
+</html>

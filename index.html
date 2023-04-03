@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Homepage</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style2.css">
+    <title>Homepage</title>
+</head>
+<body>
+	<header>
+		<h1>Welcome to Our Website</h1>
+	</header>
+	<nav>
+		<ul>
+			<li><a href="index.html">Home</a></li>
+            <li><a href="patient-info.html">Patient Information</a></li>
+			<li><a href="about.html">About</a></li>
+			<li><a href="contact.html">Contact</a></li>
+		</ul>
+	</nav>
+	<main>
+        <h1>Patient Verification</h1>
+        <form>
+
+        	<label for="existing-patient">Existing Patient:</label>
+			<input type="checkbox" id="existing-patient" name="existing-patient">
+			<label for="patient-number">Patient Unique Number:</label>
+			<input type="text" id="patient-number" name="patient-number" required>
+
+			<label for="lname">Last Name:</label>
+			<input type="text" id="lname" name="lname" required>
+
+			<label for="fname">First Name:</label>
+			<input type="text" id="fname" name="fname" required>
+
+			<label for="mname">Middle Name:</label>
+			<input type="text" id="fname" name="fname" required>
+
+
+
+			<label for="dob">Date of Birth:</label>
+			<input type="date" id="dob" name="dob" required>
+
+			<label for="gender">Gender:</label>
+            <input type="date" id="verification-dob" name="verification-dob">
+            <button type="button" id="verification-button">Verify</button>
+        </form>
+
+		<h2>About Us</h2>
+		<p>We are a healthcare provider that is dedicated to providing high-quality medical care to our patients. Our team of experienced doctors and nurses are committed to your well-being and will work with you to create a personalized treatment plan.</p>
+		<button><a href="patient-info.html">Create New Patient Information Form</a></button>
+	</main>
+	<footer>
+		<p>&copy; 2023 Our Website. All rights reserved.</p>
+	</footer>
+</body>
+</html>
